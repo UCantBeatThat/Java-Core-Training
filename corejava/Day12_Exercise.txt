@@ -1,0 +1,11 @@
+Create a HTML Form with two text Fields to represent 
+Student Id and Student Name.
+
+If the User Enters the Id of  the Student and moves
+to student name field the application should make a 
+ajax call to Student Servlet and fetch the Information 
+and put same in the student Name text field.
+
+On Click of the submit Button  the values should go to 
+Servlet's post Method which should display the 
+value entered in a ShowDetails.jsp

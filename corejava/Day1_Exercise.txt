@@ -1,0 +1,16 @@
+
+1) Using Java in Command Line
+
+Create a Folder src and save Java Classes to Convert Dollors Into Rupees 
+
+Compile the classess into a folder output 
+
+Execute the Code and check the Output
+
+2) Creating a Java Class
+
+Create a Java Class to store the details of a Blood Donor
+and test the class by passing the arguments to the Parameterized constructor and Using setter & getter Methods
+
+
+ 

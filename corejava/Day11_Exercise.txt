@@ -1,0 +1,14 @@
+Create Following JSP Pages 
+
+Apparel.jsp    Electronics.jsp   FoodItem.jsp 
+
+Each of these pages will have a radio button 
+containing items available in a html form 
+
+When the user submits the value selected is 
+store in a session.
+
+Each of these page will have nagvigation link to other pages and  a link to a page Bill.jsp
+
+In the Bill Jsp print all the items selected.
+

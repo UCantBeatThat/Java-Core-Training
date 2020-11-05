@@ -1,0 +1,17 @@
+Create a Transformer advice Which transforms the return value 
+from a method with String[] into array of uppercase and returns
+it back to client
+
+ Spring MVC
+
+Create a Spring MVC application for Registration and Login 
+
+The User should be provided with a Registration page to 
+register himself 
+
+Use JSR 303 validation in the model class 
+and validate it
+
+The Application also should provide a login page for the Users
+to log.
+

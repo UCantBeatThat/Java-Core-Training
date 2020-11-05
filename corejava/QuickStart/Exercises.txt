@@ -1,0 +1,12 @@
+
+Exercise - Day -1
+
+Create a Java Class to Convert Indian Rupees into US Dollars
+
+Classes Should be created without Using Eclipse IDE
+
+Compile and Test the code
+
+.java file should be created in a SRC folder and on compilation
+.class files should goto BIN folder 
+

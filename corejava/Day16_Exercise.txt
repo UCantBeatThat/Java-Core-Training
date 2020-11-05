@@ -1,0 +1,11 @@
+
+Create a java class Student with details like id,name,markScored
+Register few beans of the Student type using @Bean Annotations
+
+
+Create a JavaClass studentservice which has a List<Student> 
+and a Method that returns the list of students.
+
+Using Spring IoC Inject the beans to the list and invoke
+the getStudents() method which returns the list and print 
+using method Injection.

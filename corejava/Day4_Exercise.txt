@@ -1,0 +1,27 @@
+Create a Java Class MyCustomException Extending the java.lang.Exception and 
+use the overloaded constructor Exception(String,Throwable)
+
+Override the getMessage method and return both the custom message and the message of the Throwable Object passed to the constructor
+
+Create a Java Domain Class Book with attributes like 
+bookId,bookName,author,price
+
+The Price of the book should  be between 100 to 500 else throw MyCustomException Exception
+
+Handle the Nullpointer Exception in the setter method of bookName
+with the try-catch block and throw MyCustomException with a more specific message
+
+The Range check should be done in Both setter method and 
+constructor , use declare in the constructor and handle in setter method
+
+Create a java class BookService which has a Array to 
+store the details of book
+
+It should expose methods to add,getOne,and getAll Methods
+
+the getOne method should throw an NoSuchElementException
+
+Create a Main Method to test all the three methods of the Book service and handle exceptions suitably 
+
+Create the classes in a appropriate packages.
+

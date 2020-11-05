@@ -1,0 +1,64 @@
+Create a Servlet with a Name LoginServlet 
+Create a html file with a Name login.html
+Create a Form with the Post method capture userName and password and submit to LoginServlet
+
+In the Servlet check if the the UserName and password are matching forward 
+to Welcome.jsp else to failure.jsp with a message 
+invalid userName and password and provide a link 
+on that page to login.html
+
+
+Create a Html file AddInvoice.html
+Create a Form to take the Input 
+matching to Invoice.java created 
+on day8 Jdbc Excamples 
+
+Capture the values in InvoiceServlet
+Post method and capture all the values 
+and pass it to invoice Object show the 
+invoice Object in success.jsp
+
+
+
+Create a Servlet FooterServlet which 
+will pass DesignerName as a attribute 
+to a Footer.jsp page.
+
+The Servlet also has a initparamenter called
+adminId whose value is admin@abc.com
+
+IN the footer page Designer and Admin Id
+as a Hyperlink should be displayed one below the other.
+
+=========================================
+
+Create a Java Class with a Business Method 
+which return a List of Students  and another
+method which returns MarkList with Student Name 
+and Subjects
+Use Collection API - JDBC is optonal
+
+Use a Servlet to a Invoke the Business method 
+and forward it a JSP Page showStudents.jsp 
+
+Iterate the list and print all the Names 
+
+Names should be Be a Hyper Link when the User 
+clicks on the Link it should show the marks scored
+by the students .
+
+
+101 Ramesh B.E.CSC 2019-2020
+102 Rajesh B.E.CSC 2019-2020
+103 Rakesh B.E.CSC 2019-2020
+
+
+Ramesh 45 55 34 88
+
+
+public List<Student> getAllStduents()
+
+public MarkList getDetails(String name)
+
+
+

@@ -1,0 +1,28 @@
+Create a Java Class to represent 
+creditcard details 
+
+You can declare attributes as may be required
+
+one of the attributes of the class should be 
+credit limit and it should be marked as transient
+
+Write a Business Service Which will be able 
+to store  and retrive,delete the card Details into a File System 
+
+The Service will have methods to store the details in 
+Byte stream as well as character streams .
+
+The Character Streams should be able to Append details thean overwriting.
+
+The Methods of the Service take an Array as input argrument
+and returns an array.
+
+The Client Application can also specify the format to be stored ,file name and the location where the file should be stored . Overloaded Methods should be provided
+
+It will also pass the Data to be stored as an array.
+
+Use Exception handling with try-catch-finally
+
+Write the Application and test it accordingly.
+
+ 

@@ -1,0 +1,51 @@
+The Sahayadri Hospital plans to create an Application 
+to manage the appointments of all the Doctors working 
+their Hospital.
+
+Level - 1
+
+Every Single Doctor will have one more patients to attend
+
+The Application should be able to add Doctors and also 
+the patient for that particular Doctor.
+
+Given a DoctorName the application should return the list 
+of patients for him
+
+Should be able to Cancel the Appointment for a particular Doctor
+
+
+Create the Model or entity classes in a package following 
+java coding conventions
+
+Use Collection API Interfaces and classes to store Objects.
+
+Create Interfaces and Implmentation Classes 
+
+Use Exception Handling at the appropriate Places
+
+Use Comments on All the business methods
+
+Use Java Design patterns wherever possible 
+
+
+
+
+
+
+
+Level - 2 -a 
+
+Application  can Store the Appointments on a Daily Basis 
+
+Given the particular date and Doctor Name , the applicaiton should return the list  of  patients
+
+Date is represented as a String
+
+Level - 2 -a 
+
+The Same application will be able store the Appointments 
+where Date is represented as java.time.LocalDate
+
+Hint : Date is created using static Method of the Local Date class LocalDate.of(yy,mm,dd)
+ 

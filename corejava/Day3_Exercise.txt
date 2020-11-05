@@ -1,0 +1,19 @@
+
+A Rental Agency gives the following Two Item on Rent
+
+1. Computers 
+2. Furnitures
+
+The agency also has plans to rent more items like airconditioners and Kitchen Utensils etc,
+
+A Customers can take one or more item on Rent on a 
+daily basis and the rent is calcuated on Per day basis
+
+
+Write a Java Application to calculate the Total cost of Items Rental Value
+
+
+Use the Appropriate Design like Abstract Classes,Interfaces,Overriding and Overloading 
+
+
+
