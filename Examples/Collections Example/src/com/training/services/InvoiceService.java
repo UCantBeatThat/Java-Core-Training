@@ -1,12 +1,13 @@
 package com.training.services;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import com.training.ifaces.DataAccess;
 import com.training.model.Invoice;
 
-public class InvoiceService implements DataAccess<Invoice> {
+public class InvoiceService implements DataAccess<Invoice>, Comparator<Invoice> {
 
 	private List<Invoice> invoiceList;
 	
@@ -24,19 +25,25 @@ public class InvoiceService implements DataAccess<Invoice> {
 	@Override
 	public boolean add(Invoice t) {
 		// TODO Auto-generated method stub
-		return false;
+		return this.invoiceList.add(t);
 	}
 
 	@Override
 	public List<Invoice> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.invoiceList;
 	}
 
 	@Override
 	public boolean remove(Invoice t) {
 		// TODO Auto-generated method stub
-		return false;
+		return this.invoiceList.remove(t);
+	}
+
+	@Override
+	public int compare(Invoice o1, Invoice o2) {
+		
+		return o1.getCustomerName().compareTo(o2.getCustomerName());
 	}
 	
 	
