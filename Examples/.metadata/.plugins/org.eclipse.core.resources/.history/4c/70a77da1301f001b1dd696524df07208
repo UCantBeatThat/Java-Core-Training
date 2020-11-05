@@ -1,0 +1,15 @@
+package com.training;
+
+import com.training.utils.UsePrintService;
+
+public class ApplicationForSync {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		new UsePrintService("Poori", "Bajji");
+		new UsePrintService("Idli", "Sambar");
+		new UsePrintService("Pizza", "Coke");
+	}
+
+}

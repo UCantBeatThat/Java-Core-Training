@@ -1,0 +1,22 @@
+package com.training.model;
+
+public class HousingLoan extends Loan {
+	
+	private String housingType;
+	private String location;
+	
+	public HousingLoan() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public HousingLoan(int loanID, String applicantName, int cibilScore, String housingType, String location) {
+		super(loanID, applicantName, cibilScore);
+		// TODO Auto-generated constructor stub
+		this.housingType = housingType;
+		this.location = location;
+	}
+	
+	
+
+}

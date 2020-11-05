@@ -1,0 +1,10 @@
+package com.training.ifaces;
+
+import java.util.List;
+
+import com.training.model.Invoice;
+
+public interface DataAccess extends List<Invoice>{
+	
+	
+}

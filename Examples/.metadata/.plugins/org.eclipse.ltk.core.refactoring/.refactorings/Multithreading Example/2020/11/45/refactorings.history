@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;count&apos; in &apos;com.training.utils.UseNumberService&apos; to &apos;countTo&apos;&#x0A;- Original project: &apos;Multithreading Example&apos;&#x0A;- Original element: &apos;com.training.utils.UseNumberService.count&apos;&#x0A;- Renamed element: &apos;com.training.utils.UseNumberService.countTo&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;count&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.training.utils{UseNumberService.java[UseNumberService^count" name="countTo" references="true" setter="false" stamp="1604492601615" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,18 @@
+package com.training.demo;
+
+public class CreditCardApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		CreditCardService service = new CreditCardService();
+		
+		CreditCard card1 = new CreditCard(101, "Ramesh", 10000.00);
+		CreditCard card2 = new CreditCard(102, "Suresh", 20000.00);
+		CreditCard card3 = new CreditCard(103, "Rakesh", 40000.00);
+		CreditCard card4 = new CreditCard(104, "Rajesh", 100000.00);
+		CreditCard card5 = new CreditCard(101, "Ravesh", 90000.00);
+
+	}
+
+}

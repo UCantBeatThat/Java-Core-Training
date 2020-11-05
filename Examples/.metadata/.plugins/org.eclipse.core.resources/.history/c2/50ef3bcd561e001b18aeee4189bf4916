@@ -1,0 +1,19 @@
+package com.training.exceptionstore;
+
+public class MyCustomException extends Exception {
+
+	public MyCustomException() {
+		super();
+	}
+
+	public MyCustomException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.getMessage();
+	}
+	
+}

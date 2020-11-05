@@ -1,0 +1,10 @@
+package com.training.services;
+
+import com.training.ifaces.Converter;
+
+public class ConverterService {
+	
+	public void print(Converter poly) {
+		System.out.println(poly.convert());
+	}
+}

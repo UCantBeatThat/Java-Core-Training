@@ -1,0 +1,11 @@
+package com.training.utils;
+
+public class UseNumberService implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

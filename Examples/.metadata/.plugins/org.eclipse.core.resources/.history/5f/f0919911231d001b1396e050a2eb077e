@@ -1,0 +1,30 @@
+package com.training;
+
+import com.training.models.*;
+import com.training.services.ItemService;
+
+public class BillingApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Computer - Furniture
+		int key = 1;
+		
+		int qty = 2;
+		
+		double totalRent = 0.0;
+		
+		ItemService service = new ItemService();
+		
+		Rent item1 = service.getReference(key);
+		
+		if(item1 instanceof Computers) {
+			Computers comp = (Computers)item1;
+			totalRent += comp.calculateRent(qty);
+		}
+		else if(item1 instanceof Furniture) {
+			Furniture furn = (Furniture)item1;
+			totalRent += furn.calculateRent(qty);
+		}
+	}
+}

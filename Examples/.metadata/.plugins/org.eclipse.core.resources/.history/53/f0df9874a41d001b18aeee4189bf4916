@@ -1,0 +1,37 @@
+package com.training.services;
+
+import com.training.models.*;
+
+public class ItemService {
+	
+	RentItem computers;
+	RentItem furnitures;
+	
+	public ItemService() {
+		super();
+		computers = new Computer("HP", 100, 39420.59);
+		furnitures = new Furniture("Chair", 40, 499.99);
+	}
+
+	public double getItemRent(int key, int qty, int days) {
+		
+		double itemRent = 0.0;
+		
+		switch(key) {
+		case 1:
+			if(computers.updateQuantity(qty)) {
+				itemRent = computers.calculateRent(qty, days);
+			}
+			break;
+		case 2:
+			if(furnitures.updateQuantity(qty)) {
+				itemRent = furnitures.calculateRent(qty, days);
+			}
+			break;
+		default:
+			// do nothing
+		}
+		
+		return itemRent;
+	}
+}

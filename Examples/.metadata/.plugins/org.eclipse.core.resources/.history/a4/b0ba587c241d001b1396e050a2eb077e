@@ -1,0 +1,31 @@
+package com.training;
+
+import com.training.models.*;
+import com.training.services.ItemService;
+
+public class BillingApplication {
+
+	public double getItemKeyRent(int quantity) {
+		return 0.0;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Computer - Furniture
+		int key = 1;
+		
+		int qty = 2;
+		
+		double totalRent = 0.0;
+		
+		ItemService service = new ItemService();
+		
+		totalRent += service.getItemKeyRent(key, qty);
+		
+		key = 2;
+		qty = 5;
+		
+		Rent item2 = service.getReference(key)
+		
+	}
+}

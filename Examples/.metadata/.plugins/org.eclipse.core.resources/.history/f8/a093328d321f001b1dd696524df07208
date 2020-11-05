@@ -1,0 +1,23 @@
+package com.training;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.training.utils.UsePrintService;
+
+public class ApplicationForSync {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		service.exectenew UsePrintService("Idli", "Sambar");
+		new UsePrintService("Pizza", "Coke");
+		new UsePrintService("Paratha", "Dahi");	
+		
+		ExecutorService service = Executors.newSingleThreadExecutor();
+		service.execute(new UsePrintService("Poori", "Sagoo"));
+		
+	}
+
+}

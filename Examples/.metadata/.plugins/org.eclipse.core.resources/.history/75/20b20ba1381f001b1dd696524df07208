@@ -1,0 +1,16 @@
+package com.training.models;
+
+public class BankAccount {
+	
+	private double balance;
+	
+	public double deposit() {
+		
+		return 0.0;
+	}
+	
+	public double withdraw() {
+		
+		return 0.0;
+	}
+}

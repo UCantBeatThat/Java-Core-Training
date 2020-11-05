@@ -1,0 +1,32 @@
+package com.training.models;
+
+public class SavingsAccount extends BankAccount {
+
+	private String nominee;
+	
+	public SavingsAccount() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public SavingsAccount(int accountNumber, String accountHolderName, double balance) {
+		super(accountNumber, accountHolderName, balance);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SavingsAccount(int accountNumber, String accountHolderName, double balance, String nominee) {
+		super(accountNumber, accountHolderName, balance);
+		this.nominee = nominee;
+	}
+	
+	@Override
+	public double deposit(double amount) {
+		return 0;
+	}
+
+	@Override
+	public double withdraw(double amount) {
+		return 0;
+	}
+
+}

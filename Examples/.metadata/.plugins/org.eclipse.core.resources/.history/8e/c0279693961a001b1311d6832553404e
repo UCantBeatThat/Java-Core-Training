@@ -1,0 +1,10 @@
+package com.training.model;
+
+public class HousingLoan extends Loan {
+	
+	private String housingType;
+	private String location;
+	
+	
+
+}

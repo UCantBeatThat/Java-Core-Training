@@ -1,0 +1,28 @@
+package com.training;
+
+import com.training.model.*;
+
+public class LoanApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Loan loan = new Loan(102, "Suresh", 820);
+		
+		System.out.println(loan);
+		
+		System.out.println("\nCalculated ROI: " + loan.findRateOfInterest() + "%");
+		
+		// Housing Loan 
+		
+		System.out.println("\n------------------ Housing Loan ------------------");
+		
+		HousingLoan houseLoan = new HousingLoan(201, "Ramesh", 610, "Individual", "Non-Metro");
+		
+		System.out.println(houseLoan);
+		
+		System.out.println("\nCalculated ROI: " + houseLoan.findRateOfInterest() + "%");
+
+	}
+
+}

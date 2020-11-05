@@ -1,0 +1,22 @@
+
+ˆ
+java:S1104"UMake arraySize a static final constant or non-public and provide accessors if needed.(êøã›8şÉšæØ.H™RMINORZ
+CODE_SMELL
+a
+java:S1444".Make this "public static indexPos" field final(üá8ÕÍäØ.HîRMINORZ
+CODE_SMELL
+l
+java:S2696#"6Make the enclosing method "static" or remove this set.(ºßİŒ8şÉšæØ.H›RCRITICALZ
+CODE_SMELL
+b
+java:S1444"/Make this "public static arraySize" field final(êøã›8şÉšæØ.H˜RMINORZ
+CODE_SMELL
+q
+java:S2696!"6Make the enclosing method "static" or remove this set.(îÀÿøÿÿÿÿ8şÉšæØ.HšRCRITICALZ
+CODE_SMELL
+‡
+java:S1104"TMake indexPos a static final constant or non-public and provide accessors if needed.(üá8ÕÍäØ.HïRMINORZ
+CODE_SMELL
+l
+java:S2696"6Make the enclosing method "static" or remove this set.(ºßİŒ8ÇÔäØ.HğRCRITICALZ
+CODE_SMELL

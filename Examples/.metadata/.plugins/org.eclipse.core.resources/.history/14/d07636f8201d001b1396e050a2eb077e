@@ -1,0 +1,23 @@
+package com.training.models;
+
+import com.training.ifaces.Item;
+
+public class Computers extends Rent implements Item{
+
+	public Computers() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Computers(String item_name, int quantity, double rate) {
+		super(item_name, quantity, rate);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calculateRent() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

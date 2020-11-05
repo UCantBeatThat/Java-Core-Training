@@ -1,0 +1,18 @@
+package com.training.demo;
+
+public class UsingFinallyBlock {
+	
+	public static String getMessage(String name) {
+		
+		int length = 0;
+		try {
+			length = name.length();
+		}
+		catch(NullPointerException nle) {
+			System.err.println("Error-420: getMessage(String) Arguement may be null");
+		}
+		finally {
+			return "String Length: " + length;
+		}
+	}
+}

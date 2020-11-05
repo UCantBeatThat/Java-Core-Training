@@ -1,0 +1,50 @@
+package com.training.services;
+
+import com.training.models.Book;
+
+public class BookService {
+	
+	Book bookList[];
+	private static int arraySize = 2;
+	private static int indexPos = 0;
+	
+	public BookService() {
+		super();
+		bookList = new Book[arraySize];
+	}
+	
+	public boolean addBook(Book book) {
+		boolean result = false;
+		
+		if(indexPos < arraySize) {
+			this.bookList[indexPos++] = book;
+			result = true;			
+		}
+		else if(indexPos == arraySize) {
+			Book[] tempCardList = new Book[arraySize*2];
+			System.arraycopy(bookList, 0, tempCardList, 0, arraySize);
+			arraySize *= 2;
+			bookList = tempCardList;
+			this.bookList[indexPos++] = book;
+			result = true;
+		}
+		System.out.println(this.bookList.length);
+		return result;
+	}
+	
+	public void getAllBooks() {
+		int i = 1;
+		for(Book eachBook:this.bookList) {
+			System.out.println("Book " + i++ + "----------\nBook ID: " + eachBook.getBookID()
+					+ "\nBook Name: " + eachBook.getBookName()
+					+ "\nAuthor Name: " + eachBook.getAuthorName()
+					+ "\nPrice: " + eachBook.getPrice());
+		}
+	}
+	
+	
+	
+	
+	
+	
+}

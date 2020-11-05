@@ -1,0 +1,33 @@
+package com.training;
+
+import com.training.models.BankAccount;
+
+public class ThreadCommunication {
+
+	public static void main(String[] args) {
+		
+		BankAccount account = new BankAccount();
+		
+		Thread t1 = new Thread() {
+			
+			@Override
+			public void run() {
+				System.out.println(account.withdraw(6000));
+				System.out.println("Amount Withdrawn");
+			}
+		};
+		
+		Thread t2 = new Thread() {
+			
+			@Override
+			public void run() {
+				System.out.println(account.deposit(10000));
+				System.out.println("Amount Deposited");
+			}
+		};
+		
+		t1.start();
+		
+		t2.start();
+	}
+}

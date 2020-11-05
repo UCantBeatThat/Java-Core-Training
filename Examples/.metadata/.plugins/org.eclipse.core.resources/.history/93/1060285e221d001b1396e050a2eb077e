@@ -1,0 +1,37 @@
+package com.training;
+
+import com.training.models.*;
+import com.training.services.ItemService;
+
+public class BillingApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Computer - Furniture
+		int key = 1;
+		
+		int qty = 2;
+		
+		ItemService service = new ItemService();
+		
+		Rent item1 = service.getReference(key);
+		
+		if(item1 instanceof Computers) {
+			Computers comp = (Computers)item1;
+			comp.calculateRent(qty);
+		}
+		
+		if(Integer.parseInt(args[0]) > 0) {
+			Rent comp = new Computers("HP", Integer.parseInt(args[0]), 42120.4);
+		}
+		
+		if(Integer.parseInt(args[1]) > 0) {
+			Rent furniture = new Furniture("Chair", Integer.parseInt(args[1]), 300.99);
+		}
+		
+		
+		
+		
+	}
+
+}

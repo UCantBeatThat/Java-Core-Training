@@ -1,0 +1,18 @@
+package com.training.services;
+
+import com.training.model.HousingLoan;
+import com.training.model.Loan;
+
+public class UpdateLoanServices extends LoanService {
+
+	@Override
+	public HousingLoan getLoan(int key) {
+		// TODO Auto-generated method stub
+		if(key == 2) {
+			return new HousingLoan(900, "Manish", 788, "Individual", "Non-Metro");
+		}
+		return super.getLoan(key);
+	}
+	
+	
+}

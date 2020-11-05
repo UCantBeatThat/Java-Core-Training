@@ -1,0 +1,13 @@
+package com.training.services;
+
+import com.training.ifaces.DataAccess;
+
+public class InvoiceService implements DataAccess<Invoice> {
+
+	public InvoiceService() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+package com.converter;
+
+public class CuurencyCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

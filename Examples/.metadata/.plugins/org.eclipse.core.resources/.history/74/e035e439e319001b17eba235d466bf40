@@ -1,0 +1,14 @@
+package com.converter;
+
+public class CuurencyCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CurrencyConverter conv = new CurrencyConverter();
+		
+		System.out.println("Input (Rs): " + args[0]);
+		System.out.println("Output (Dollars): " + conv.dollarToRupees(Double.parseDouble(args[0])));
+
+	}
+
+}

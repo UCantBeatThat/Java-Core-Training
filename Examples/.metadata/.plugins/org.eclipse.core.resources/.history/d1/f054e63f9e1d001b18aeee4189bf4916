@@ -1,0 +1,27 @@
+package com.training.services;
+
+import com.training.models.*;
+
+public class ItemService {
+	
+	public double getItemKeyRent(Rent item, int qty) {
+		
+		double itemRent = 0.0;
+		
+		if(item instanceof Computers) {
+			Computers item1 = (Computers)item;
+			if(item1.updateQuantity(qty)) {
+				itemRent = item1.calculateRent(qty);
+			}
+			
+		}
+		else if(item instanceof Furniture) {
+			Furniture item1 = (Furniture)item;
+			if(item1.updateQuantity(qty)) {
+				itemRent = item1.calculateRent(qty);
+			}
+		}
+		
+		return itemRent;
+	}
+}

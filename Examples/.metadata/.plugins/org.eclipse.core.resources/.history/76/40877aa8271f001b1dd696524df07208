@@ -1,0 +1,22 @@
+package com.training;
+
+public class UsingJoinMethod {
+	public static void main(String[] args) {
+		
+		System.out.println("Main Starting");
+		
+		Thread t1 = new Thread() {
+			public void run() {
+				System.out.println("Reading");
+				
+				try {
+					System.in.read();
+					
+					
+				}
+			}
+		};
+		
+		System.out.println("Main Finished");
+	}
+}

@@ -1,0 +1,37 @@
+package com.training.services;
+
+import com.training.models.*;
+
+public class ItemService {
+	
+	RentItem computers;
+	RentItem furnitures;
+	
+	public ItemService() {
+		super();
+		computers = new Computer("HP", 100, 39420.59);
+		furnitures = new Furniture("Chair", 40, 499.99);
+		// TODO Auto-generated constructor stub
+	}
+
+	public double getItemKeyRent(int key, int qty, int days) {
+		
+		double itemRent = 0.0;
+		
+		if(key == 1) {
+			Computer item1 = (Computer)item;
+			if(item1.updateQuantity(qty)) {
+				itemRent = item1.calculateRent(qty, days);
+			}
+			
+		}
+		else if(item instanceof Furniture) {
+			Furniture item1 = (Furniture)item;
+			if(item1.updateQuantity(qty)) {
+				itemRent = item1.calculateRent(qty, days);
+			}
+		}
+		
+		return itemRent;
+	}
+}

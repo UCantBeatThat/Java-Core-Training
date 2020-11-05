@@ -1,0 +1,25 @@
+package com.training.demo;
+
+public class CreditCardService {
+	
+	private CreditCard[] cardList;
+	
+	public CreditCard[] getCardList() {
+		return cardList;
+	}
+
+	public void setCardList(CreditCard[] cardList) {
+		this.cardList = cardList;
+	}
+
+	public boolean addCard(CreditCard card) {
+		boolean result = true;
+		
+		this.cardList[cardList.length] = card;
+		
+		return result;
+		
+		
+	}
+
+}

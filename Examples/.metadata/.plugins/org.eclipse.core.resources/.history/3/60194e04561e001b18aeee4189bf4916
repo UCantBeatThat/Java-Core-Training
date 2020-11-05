@@ -1,0 +1,16 @@
+package com.training;
+
+import com.training.services.BookService;
+
+public class BookApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BookService service = new BookService();
+		
+		Book book1 = new Book(101, "Java JEE", "Srivatsan", 2129.99);
+
+	}
+
+}

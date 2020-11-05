@@ -1,0 +1,17 @@
+package com.training.services;
+
+import com.training.models.BankAccount;
+import com.training.models.SavingsAccount;
+
+public class BankAccountService {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankAccount account = new SavingsAccount(1000, "Ramesh", 20000, "Suresh");
+		
+		account.deposit(1000);
+		
+		System.out.println(account.getBalance());
+	}
+
+}

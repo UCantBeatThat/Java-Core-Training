@@ -1,0 +1,17 @@
+package com.training.ifaces;
+
+
+
+import java.util.List;
+
+import com.training.model.Invoice;
+
+public interface DataAccess<T>{
+	
+	public boolean add(Invoice t);
+	
+	public List<Invoice> findAll();
+	
+	public boolean remove(Invoice t);
+	
+}

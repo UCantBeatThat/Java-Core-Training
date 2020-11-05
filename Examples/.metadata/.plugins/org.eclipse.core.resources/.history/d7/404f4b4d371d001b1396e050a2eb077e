@@ -1,0 +1,8 @@
+package com.training.ifaces;
+
+public interface Item {
+	
+	public double calculateRent(int qty);
+	
+	public void updateQuantity(int qty);
+}

@@ -1,0 +1,24 @@
+package com.training.exceptionstore;
+
+public class MyCustomException extends Exception {
+
+	public MyCustomException() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public MyCustomException(String message, Throwable cause) {
+		super(message, cause);
+//		if(cause instanceof NullPointerException) {
+//		}
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return super.getMessage() + "\n";
+	}
+	
+	
+}

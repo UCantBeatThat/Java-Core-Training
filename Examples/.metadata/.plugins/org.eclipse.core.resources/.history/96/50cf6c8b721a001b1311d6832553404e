@@ -1,0 +1,12 @@
+package com.training;
+
+public class BookApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book headFirst = new Book();
+		
+		Book spring = new Book(101, "Spring in Action", "Vicky", 210.99);
+	}
+
+}

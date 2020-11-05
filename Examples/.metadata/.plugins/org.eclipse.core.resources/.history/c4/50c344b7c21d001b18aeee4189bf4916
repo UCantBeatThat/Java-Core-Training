@@ -1,0 +1,10 @@
+package com.training.demo;
+
+public class UsingFinallyBlock {
+	
+	public static String getMessage(String name) {
+		int length = name.length();
+		
+		return "String Length: " + length;
+	}
+}

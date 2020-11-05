@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.training.Greeting"/>
+<fullyQualifiedTypeName name="com.converter.CurrencyConverter"/>
+<fullyQualifiedTypeName name="com.training.Book"/>
+<fullyQualifiedTypeName name="com.training.model.HousingLoan"/>
+<fullyQualifiedTypeName name="com.training.services.LoanService"/>
+<fullyQualifiedTypeName name="com.training.services.UpdateLoanServices"/>
+<fullyQualifiedTypeName name="com.training.demo.CreditCardService"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.training.demo.CreditCard"/>
+<fullyQualifiedTypeName name="com.training.ifaces.Item"/>
+<fullyQualifiedTypeName name="com.training.models.RentItem"/>
+<fullyQualifiedTypeName name="com.training.models.Furniture"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.training.demo.UsingFinallyBlock"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="com.training.services.BookService"/>
+<fullyQualifiedTypeName name="com.training.models.Book"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.training.services.InvoiceService"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="com.training.model.Invoice"/>
+<fullyQualifiedTypeName name="com.training.utils.Counter"/>
+<fullyQualifiedTypeName name="com.training.services.NumberService"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.training.utils.UseNumberService"/>
+<fullyQualifiedTypeName name="com.training.exceptionstore.MyCustomException"/>
+</qualifiedTypeNameHistroy>

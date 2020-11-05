@@ -1,0 +1,25 @@
+package com.training;
+
+import com.training.models.Book;
+import com.training.services.BookService;
+
+public class BookApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("1");
+		BookService service = new BookService();
+		
+		try {
+			Book book1 = new Book(101, "Java JEE", "Srivatsan", 2119.99);
+			System.out.println("2");
+			service.addBook(book1);
+			
+			service.getAllBooks();
+		}
+		catch(Exception e) {
+			e.getMessage();
+		}
+	}
+
+}

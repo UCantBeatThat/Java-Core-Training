@@ -1,0 +1,35 @@
+package com.training.services;
+
+import com.training.models.*;
+
+public class ItemService {
+	
+	public Rent getReference(int key) {
+		switch(key) {
+			case 1:
+				return new Computers();
+			case 2:
+				return new Furniture();
+			default:
+				return null;
+		}
+	}
+	
+	public double getItemKeyRent(int key, int qty) {
+		
+		Rent item1 = getReference(key);
+		
+		double itemRent = 0.0;
+		
+		if(item1 instanceof Computers) {
+			Computers comp = (Computers)item1;
+			itemRent = comp.calculateRent(qty);
+		}
+		else if(item1 instanceof Furniture) {
+			Furniture furn = (Furniture)item1;
+			itemRent = furn.calculateRent(qty);
+		}
+		
+		return itemRent;
+	}
+}

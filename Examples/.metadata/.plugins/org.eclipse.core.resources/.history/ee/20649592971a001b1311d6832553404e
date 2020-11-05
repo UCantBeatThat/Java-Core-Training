@@ -1,0 +1,50 @@
+package com.training.model;
+
+public class HousingLoan extends Loan {
+	
+	private String housingType;
+	private String location;
+	
+	public HousingLoan() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public HousingLoan(int loanID, String applicantName, int cibilScore, String housingType, String location) {
+		super(loanID, applicantName, cibilScore);
+		// TODO Auto-generated constructor stub
+		this.housingType = housingType;
+		this.location = location;
+	}
+
+	public String getHousingType() {
+		return housingType;
+	}
+
+	public void setHousingType(String housingType) {
+		this.housingType = housingType;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() + "\nHousing Type: " + this.housingType + "\nLocation: " + this.location;
+	}
+
+	@Override
+	public double findRateOfInterest() {
+		// TODO Auto-generated method stub
+		return super.findRateOfInterest();
+	}
+	
+	
+
+}

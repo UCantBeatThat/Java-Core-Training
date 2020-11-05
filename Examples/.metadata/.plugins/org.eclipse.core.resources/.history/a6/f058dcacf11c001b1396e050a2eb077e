@@ -1,0 +1,20 @@
+package com.training.models;
+
+import com.training.ifaces.Converter;
+
+public class CurrencyConverter implements Converter {
+	
+	private double indianRupees;
+
+	public CurrencyConverter() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double convert() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

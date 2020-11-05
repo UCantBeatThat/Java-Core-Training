@@ -1,0 +1,15 @@
+package com.training.services;
+
+public class PrintService {
+
+	public static void print(String str1, String str2) {
+		System.out.println(str1);
+		System.out.println(str2);
+		
+		try {
+			Thread.sleep()
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package com.training.models;
+
+import com.training.ifaces.Converter;
+
+public class TemperatureConverter implements Converter {
+
+	@Override
+	public double convert() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

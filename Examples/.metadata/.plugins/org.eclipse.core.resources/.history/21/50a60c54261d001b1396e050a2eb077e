@@ -1,0 +1,35 @@
+package com.training;
+
+import com.training.models.*;
+import com.training.services.ItemService;
+
+public class BillingApplication {
+	
+	public static void main(String[] args) {
+		
+		int key = 1;
+		
+		int qty = 2;
+		
+		double totalRent = 0.0, itemRent = 0.0;
+		
+		ItemService service = new ItemService();
+		
+		itemRent = service.getItemKeyRent(key, qty);
+		
+		System.out.println("Item1 Total = " + itemRent);
+		
+		totalRent += itemRent;
+		
+		key = 2;
+		qty = 5;
+		
+		itemRent = service.getItemKeyRent(key, qty);
+		
+		totalRent += itemRent;
+		
+		System.out.println("Item1 Total = " + itemRent);
+		
+		System.out.println("\nGrand Total = " + totalRent);
+	}
+}

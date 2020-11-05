@@ -1,0 +1,10 @@
+package com.converter;
+
+public class CurrencyConverter {
+	
+	final double DToR = 74.5;
+	
+	public double dollarToRupees(double dollar) {
+		return dollar*DToR;
+	}
+}
