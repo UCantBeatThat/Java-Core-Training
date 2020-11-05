@@ -10,4 +10,6 @@ public interface DataAccess<T>{
 	
 	public boolean remove(T t);
 	
+	public List<T> getSortedListBy(String field);
+	
 }

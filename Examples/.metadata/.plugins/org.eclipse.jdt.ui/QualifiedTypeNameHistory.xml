@@ -21,7 +21,6 @@
 <fullyQualifiedTypeName name="com.training.services.BookService"/>
 <fullyQualifiedTypeName name="com.training.models.Book"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="com.training.services.InvoiceService"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
@@ -30,10 +29,21 @@
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="com.training.model.Invoice"/>
 <fullyQualifiedTypeName name="com.training.utils.Counter"/>
 <fullyQualifiedTypeName name="com.training.services.NumberService"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.training.utils.UseNumberService"/>
 <fullyQualifiedTypeName name="com.training.exceptionstore.MyCustomException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.training.services.InvoiceService"/>
+<fullyQualifiedTypeName name="com.training.utils.InvoiceComparators"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.training.utils.InvoiceComparators.InvoiceAmountComparator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="com.training.utils.InvoiceComparators.InvoiceNumberComparator"/>
+<fullyQualifiedTypeName name="com.training.model.Invoice"/>
+<fullyQualifiedTypeName name="com.training.ifaces.Constants"/>
 </qualifiedTypeNameHistroy>

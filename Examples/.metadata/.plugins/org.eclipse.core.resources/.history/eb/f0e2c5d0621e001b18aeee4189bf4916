@@ -1,7 +1,0 @@
-package com.training.model;
-
-import java.io.Serializable;
-
-public class Invoice implements Serializable {
-
-}

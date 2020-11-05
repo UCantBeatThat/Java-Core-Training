@@ -5,10 +5,20 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+import com.training.ifaces.Constants;
 import com.training.model.Invoice;
 import com.training.services.InvoiceService;
 
 public class InvoiceApplication {
+	
+	public static void print(List<Invoice> invlist) {
+		Iterator<Invoice> itr = invlist.iterator();
+		
+		while(itr.hasNext()) {
+			Invoice inv = itr.next();
+			System.out.println(inv);
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -25,12 +35,7 @@ public class InvoiceApplication {
 		
 		List<Invoice> list = service.findAll();
 		
-		Iterator<Invoice> itr = list.iterator();
-		
-		while(itr.hasNext()) {
-			Invoice inv = itr.next();
-			System.out.println(inv);
-		}
+		print(list);
 		
 		List<String> names = Arrays.asList("Ramesh", "Sandesh", "Rajesh", "Suresh", "Shiv", "Yash");
 		
@@ -41,6 +46,18 @@ public class InvoiceApplication {
 		list.sort(service);
 		
 		System.out.println(list);
+		
+		System.out.println("Sorted By Name");
+		List<Invoice> list2 = service.getSortedListBy(Constants.CUSTOMERNAME);
+		print(list2);
+		
+		System.out.println("Sorted By Amount");
+		List<Invoice> list3 = service.getSortedListBy(Constants.AMOUNT);
+		print(list3);
+		
+		System.out.println("Sorted By Invoice Numer");
+		List<Invoice> list4 = service.getSortedListBy(Constants.INVOICENUMBER);
+		print(list4);
 
 	}
 

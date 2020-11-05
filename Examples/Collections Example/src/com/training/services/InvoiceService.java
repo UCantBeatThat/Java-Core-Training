@@ -1,11 +1,14 @@
 package com.training.services;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import com.training.ifaces.Constants;
 import com.training.ifaces.DataAccess;
 import com.training.model.Invoice;
+import com.training.utils.InvoiceComparators;
 
 public class InvoiceService implements DataAccess<Invoice>, Comparator<Invoice> {
 
@@ -44,6 +47,24 @@ public class InvoiceService implements DataAccess<Invoice>, Comparator<Invoice> 
 	public int compare(Invoice o1, Invoice o2) {
 		
 		return o1.getCustomerName().compareTo(o2.getCustomerName());
+	}
+
+	@Override
+	public List<Invoice> getSortedListBy(String field) {
+		// TODO Auto-generated method stub
+		
+		InvoiceComparators comparators = new InvoiceComparators();
+		switch(field) {
+			case Constants.CUSTOMERNAME:
+				// Collections.sort(this.invoiceList);
+				break;
+			case Constants.AMOUNT:
+				Collections.sort(this.invoiceList, comparators.new InvoiceAmountComparator());
+				break;
+			case Constants.INVOICENUMBER:
+				Collections.sort(this.invoiceList, comparators.new InvoiceNumberComparator());
+		}
+		return this.invoiceList;
 	}
 	
 	
