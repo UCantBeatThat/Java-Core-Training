@@ -11,3 +11,5 @@ V
 -src/com/training/services/InvoiceService.java,6/9/693406c0c9fbe2e4bbed92623754c5db5e3efebb
 X
 (src/com/training/InvoiceApplication.java,e/6/e6c48cd9a1b0e40462dde781a57a32c4cc44df91
+O
+src/com/training/SetAndMap.java,1/0/10a3f9531874cfca04fbd0361136e2669cf0f838

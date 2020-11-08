@@ -21,11 +21,14 @@ public class InvoiceApplication {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Invoice inv1 = new Invoice(101, "Ramesh", 6712.0);
 		Invoice inv2 = new Invoice(102, "Suresh", 3412.0);
 		Invoice inv3 = new Invoice(103, "Anup", 4341);
+		
+		Invoice inv4 = new Invoice(103, "Anup", 4341);
+		
+		System.out.println(inv3.equals(inv4));
 		
 		InvoiceService service = new InvoiceService();
 		
