@@ -14,4 +14,6 @@ public interface DataAccess<T>{
 	
 	public List<T> getSortedListBy(String field);
 	
+	public T findById(int key);
+	
 }

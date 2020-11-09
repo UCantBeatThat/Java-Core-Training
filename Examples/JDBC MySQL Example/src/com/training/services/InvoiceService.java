@@ -89,29 +89,70 @@ public class InvoiceService implements DataAccess<Invoice> {
 	}
 
 	@Override
-	public List<Invoice> getSortedListBy(String field) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public boolean update(Invoice t) {
 		
-		String updateQuery = "UPDATE invoices SET WHERE invoiceNumber = ?";
+		String updateQuery = "UPDATE invoice SET customerName = ?, amount = ? WHERE invoiceNumber = ?";
 		
-		int rowsDeleted = 0;
+		int rowsUpdated = 0;
 		
 		try(PreparedStatement pstmt = connection.prepareStatement(updateQuery)) {
 			
-			pstmt.setInt(1, t.getInvoiceNumber());
+			pstmt.setString(1, t.getCustomerName());
+			pstmt.setDouble(2, t.getAmount());
+			pstmt.setInt(3, t.getInvoiceNumber());
 			
-			rowsDeleted = pstmt.executeUpdate();
+			rowsUpdated = pstmt.executeUpdate();
 			
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return rowsDeleted == 1?true:false;
+		return rowsUpdated == 1?true:false;
+	}
+	
+	@Override
+	public Invoice findById(int key) {
+		// TODO Auto-generated method stub
+		String selectQuery = "SELECT * FROM invoice WHERE invoiceNumber=?";
+		Invoice foundInvoice = null;
+		
+		try (PreparedStatement pstmt = connection.prepareStatement(selectQuery);) {
+			
+			pstmt.setInt(1, key);
+			
+			ResultSet resultSet = pstmt.executeQuery();
+			
+			if(resultSet.next()) {
+				int invNumber = resultSet.getInt("invoiceNumber");
+				String custName = resultSet.getString("customerName");
+				double invAmount = resultSet.getDouble("amount");
+				
+				foundInvoice = new Invoice(invNumber,custName,invAmount);
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return foundInvoice;
+		
+	}
+
+	public void closeConnection() {
+		try {
+			this.connection.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<Invoice> getSortedListBy(String field) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

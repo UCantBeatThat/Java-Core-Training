@@ -41,7 +41,15 @@ public class InvoiceApplication {
 		
 		print(list);
 		
-		System.out.println(service.remove(inv1));
+		// System.out.println(service.remove(inv1));
+		
+		inv2.setAmount(4200);
+		
+		System.out.println(service.update(inv2));
+		
+		System.out.println(service.findById(inv2.getInvoiceNumber()));
+		
+		service.closeConnection();
 //		
 //		List<String> names = Arrays.asList("Ramesh", "Sandesh", "Rajesh", "Suresh", "Shiv", "Yash");
 //		
