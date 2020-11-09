@@ -1,7 +1,9 @@
 package com.training;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.training.model.Student;
@@ -47,7 +49,31 @@ public class StreamsApplication {
 			.filter(eachStudent -> eachStudent.getMarkScored() > 60)
 			.collect(Collectors.toMap(Student::getName, Student::getMobileNumber))
 			.entrySet()
-			.forEach(eachStudent -> System.out.println(eachStudent.getKey() + ": " + eachStudent.getValue()));	
+			.forEach(eachStudent -> System.out.println(eachStudent.getKey() + ": " + eachStudent.getValue()));
+		
+		System.out.println("\nSorted List of Students wrt to Marks");
+		
+		students.stream()
+			.sorted(Comparator.comparing(Student::getMarkScored).reversed())
+			.forEach(System.out::println);
+		
+		System.out.println("\nUsing terminal operators");
+		
+		Comparator<Student> comparator = Comparator.comparing(Student::getMarkScored);
+		
+		Optional<?> highestMark = students.stream()
+				.max(comparator);
+		
+		Optional<?> lowestMark = students.stream()
+				.min(comparator);
+		
+		if(highestMark.isPresent()) {
+			System.out.println("Highest Mark: " + highestMark.get());
+		}
+		
+		if(lowestMark.isPresent()) {
+			System.out.println("Lowest Mark: " + lowestMark.get());
+		}
 	}
 
 }
