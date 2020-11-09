@@ -1,6 +1,0 @@
-package com.training.models;
-
-public abstract class BusinessAccount extends BankAccount {
-	
-
-}
