@@ -36,5 +36,16 @@ class TestGreeting {
 		
 		assertEquals("Welcome to Java Training", actual);
 	}
+	
+	@Test
+	@DisplayName(value="Test for getMessage using assertAll")
+	void testMoreThanOneCase() {
+		
+		assertAll( 
+				() -> assertNotNull(greeting.getMessage()), 
+				() -> assertEquals(24, greeting.getMessage().length()),
+				() -> assertEquals("Welcome to Java Training", greeting.getMessage())
+				);
+	}
 
 }
