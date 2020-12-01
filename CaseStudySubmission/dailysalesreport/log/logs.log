@@ -1,0 +1,72 @@
+12/Nov/2020 10:11:52,105-root:Connection with MySQL DB Established.
+12/Nov/2020 10:11:52,213-ProductService:Adding Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:11:52,407-ProductService:Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:11:52,409-ProductService:Adding Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:11:52,563-ProductService:Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:11:52,565-ProductService:Adding Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0} to the databse
+12/Nov/2020 10:11:52,653-ProductService:Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0}added to DB
+12/Nov/2020 10:11:52,655-ProductService:Adding Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:11:52,768-ProductService:Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:11:52,769-ProductService:findByDate(int, LocalDate): Getting the list of items by date
+12/Nov/2020 10:11:52,772-ProductService:findByDate(int, LocalDate): List of items retrieved from the DB
+12/Nov/2020 10:11:52,780-ProductService:findTopProductsByMonth(int key, int month): Getting the top 3 items
+12/Nov/2020 10:11:52,785-ProductService:findTopProductsByMonth(int key, int month): List of products retrieved
+12/Nov/2020 10:11:52,803-ProductService:Connection Closed.
+12/Nov/2020 10:14:23,022-root:Connection with MySQL DB Established.
+12/Nov/2020 10:14:23,158-ProductService:Adding Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:23,333-ProductService:Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:23,335-ProductService:Adding Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:23,456-ProductService:Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:23,458-ProductService:Adding Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:23,622-ProductService:Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:23,623-ProductService:Adding Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:23,848-ProductService:Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:23,848-ProductService:findByDate(int, LocalDate): Getting the list of items by date
+12/Nov/2020 10:14:23,851-ProductService:findByDate(int, LocalDate): List of items retrieved from the DB
+12/Nov/2020 10:14:23,855-ProductService:findTopProductsByMonth(int key, int month): Getting the top 3 items
+12/Nov/2020 10:14:23,903-ProductService:findTopProductsByMonth(int key, int month): List of products retrieved
+12/Nov/2020 10:14:23,911-ProductService:Connection Closed.
+12/Nov/2020 10:14:37,207-root:Connection with MySQL DB Established.
+12/Nov/2020 10:14:37,282-ProductService:Adding Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:37,508-ProductService:Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:37,510-ProductService:Adding Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:37,635-ProductService:Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:37,636-ProductService:Adding Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:37,734-ProductService:Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:37,735-ProductService:Adding Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 10:14:37,808-ProductService:Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 10:14:37,808-ProductService:findByDate(int, LocalDate): Getting the list of items by date
+12/Nov/2020 10:14:37,819-ProductService:findByDate(int, LocalDate): List of items retrieved from the DB
+12/Nov/2020 10:14:37,829-ProductService:findTopProductsByMonth(int key, int month): Getting the top 3 items
+12/Nov/2020 10:14:37,833-ProductService:findTopProductsByMonth(int key, int month): List of products retrieved
+12/Nov/2020 10:14:37,849-ProductService:Connection Closed.
+12/Nov/2020 16:51:38,302-root:Connection with MySQL DB Established.
+12/Nov/2020 16:51:38,492-ProductService:Adding Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:51:38,981-ProductService:Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:51:38,984-ProductService:Adding Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:51:39,107-ProductService:Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:51:39,115-ProductService:Adding Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0} to the databse
+12/Nov/2020 16:51:39,249-ProductService:Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0}added to DB
+12/Nov/2020 16:51:39,250-ProductService:Adding Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:51:39,376-ProductService:Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:51:39,377-ProductService:findByDate(int, LocalDate): Getting the list of items by date
+12/Nov/2020 16:51:39,539-ProductService:findByDate(int, LocalDate): List of items retrieved from the DB
+12/Nov/2020 16:51:39,580-ReportGeneratorService:reports/reportByDate.txt: Report file could not be generated
+12/Nov/2020 16:51:39,585-ProductService:findTopProductsByMonth(int key, int month): Getting the top 3 items
+12/Nov/2020 16:51:39,592-ProductService:findTopProductsByMonth(int key, int month): List of products retrieved
+12/Nov/2020 16:51:39,603-ReportGeneratorService:reports/topThreeProducts.txt: Report file could not be generated
+12/Nov/2020 16:51:39,616-ProductService:Connection Closed.
+12/Nov/2020 16:52:25,874-root:Connection with MySQL DB Established.
+12/Nov/2020 16:52:25,947-ProductService:Adding Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:52:26,153-ProductService:Product {"dateOfManufacture":{"year":2020,"month":10,"day":3},"dateOfExpiry":{"year":2021,"month":2,"day":20},"foodType":"Vegetarian","itemCode":110,"itemName":"Soan Papdi","unitPrice":80.0,"quantity":5,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:52:26,154-ProductService:Adding Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:52:26,277-ProductService:Product {"size":32,"material":"Gents","itemCode":101,"itemName":"Polo T-Shirt","unitPrice":299.99,"quantity":10,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:52:26,279-ProductService:Adding Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0} to the databse
+12/Nov/2020 16:52:26,426-ProductService:Product {"size":36,"material":"Unisex","itemCode":102,"itemName":"Levis Jeans","unitPrice":789.2,"quantity":4,"dateOfPurchase":{"year":2020,"month":11,"day":13},"lineTotal":0.0}added to DB
+12/Nov/2020 16:52:26,427-ProductService:Adding Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0} to the databse
+12/Nov/2020 16:52:26,567-ProductService:Product {"size":6,"warranty":1,"wattage":240,"itemCode":102,"itemName":"Samsung Galaxy M30","unitPrice":21899.99,"quantity":109090,"dateOfPurchase":{"year":2020,"month":11,"day":12},"lineTotal":0.0}added to DB
+12/Nov/2020 16:52:26,567-ProductService:findByDate(int, LocalDate): Getting the list of items by date
+12/Nov/2020 16:52:26,573-ProductService:findByDate(int, LocalDate): List of items retrieved from the DB
+12/Nov/2020 16:52:26,583-ProductService:findTopProductsByMonth(int key, int month): Getting the top 3 items
+12/Nov/2020 16:52:26,586-ProductService:findTopProductsByMonth(int key, int month): List of products retrieved
+12/Nov/2020 16:52:26,595-ProductService:Connection Closed.

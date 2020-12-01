@@ -2,13 +2,22 @@ package com.project.organicstores.dailysalesreport;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.sql.Connection;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.project.organicstores.dailysalesreport.services.ProductService;
+import com.project.organicstores.dailysalesreport.utils.ConnectionUtils;
+
 class TestReportServices {
+	
+	private Connection connection = ConnectionUtils.getConnectionFromPool();
+	
+	private ProductService productService = new ProductService(connection);
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -28,7 +37,8 @@ class TestReportServices {
 
 	@Test
 	void testFindLastKey() {
-		fail("Not yet implemented");
+		String returnValue = productService.findLastKey(1);
+		
 	}
 
 	@Test

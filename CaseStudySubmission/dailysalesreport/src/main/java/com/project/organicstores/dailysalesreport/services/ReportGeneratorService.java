@@ -1,14 +1,20 @@
 package com.project.organicstores.dailysalesreport.services;
 
+import java.io.*;
+
 import java.sql.Connection;
 import java.time.LocalDate;
 import java.util.List;
+
+import org.apache.log4j.Logger;
 
 import com.project.organicstores.dailysalesreport.model.Product;
 
 public class ReportGeneratorService {
 	
 	private Connection connection;
+	
+	Logger log = Logger.getLogger(this.getClass().getName());
 	
 	public ReportGeneratorService(Connection connection) {
 		super();
@@ -33,20 +39,32 @@ public class ReportGeneratorService {
 		else if(key == 3) {
 			System.out.println("Electronic Items report for " + date.getDayOfMonth() + " " + date.getMonth() + " " + date.getYear());
 		}
-		System.out.println("--------------------------------------------------------------------------");
-		System.out.println("Sl. No.\tItem Name\t\tUnit Price\tQuantity\tAmount\t");
-		System.out.println("--------------------------------------------------------------------------");
+		
+		String reportString = "";
+		String dashLine = "--------------------------------------------------------------------------\n";
+		
+		reportString += dashLine;
+		reportString += "Sl. No.\tItem Name\t\tUnit Price\tQuantity\tAmount\t\n";
+		reportString += dashLine;
 		
 		for(Product eachProduct : productList) {
 			grandTotal += eachProduct.getLineTotal();
 			totalQuantity += eachProduct.getQuantity();
-			System.out.println(eachProduct.getItemCode() + "\t" + eachProduct.getItemName() + "\t\t" 
-					+ eachProduct.getUnitPrice() + "\t\t" + eachProduct.getQuantity() + "\t\t" + eachProduct.getLineTotal());
+			reportString += (eachProduct.getItemCode() + "\t" + eachProduct.getItemName() + "\t\t" 
+					+ eachProduct.getUnitPrice() + "\t\t" + eachProduct.getQuantity() + "\t\t" + eachProduct.getLineTotal() + "\n");
 		}
 		
-		System.out.println("--------------------------------------------------------------------------");
-		System.out.println("Total\t\t\t\t\t\t" + totalQuantity + "\t\t" + grandTotal);
-		System.out.println("--------------------------------------------------------------------------\n\n");
+		reportString += dashLine;
+		reportString += "Total\t\t\t\t\t\t" + totalQuantity + "\t\t" + grandTotal + "\n";
+		reportString += dashLine;
+		
+		File file = new File("reports/reportByDate.txt");
+		
+		if(!writeToTextFile(reportString, file)) {
+			log.error(file.toString() + ": Report file could not be generated");
+		}
+		
+		System.out.println(reportString);
 	}
 	
 	public void generateReportForTopSellingItems(int key, int month) {
@@ -68,19 +86,44 @@ public class ReportGeneratorService {
 		else if(key == 3) {
 			System.out.println("Top Selling Electronic Items for " + monthNames[month-1] + " 2020");
 		}
-		System.out.println("---------------------------------------------------");
-		System.out.println("Sl. No.\tItem Name\t\tQuantity");
-		System.out.println("---------------------------------------------------");
+		
+		String reportString = "";
+		String dashLine = "---------------------------------------------------\n"; 
+		
+		reportString += dashLine;
+		reportString += "Sl. No.\tItem Name\t\tQuantity\n";
+		reportString += dashLine;
 		
 		for(Product eachProduct : productList) {
 			totalQuantity += eachProduct.getQuantity();
-			System.out.println(eachProduct.getItemCode() + "\t" + eachProduct.getItemName() + "\t\t" 
-					+ eachProduct.getQuantity());
+			reportString += (eachProduct.getItemCode() + "\t" + eachProduct.getItemName() + "\t\t" 
+					+ eachProduct.getQuantity() + "\n");
 		}
 		
-		System.out.println("---------------------------------------------------");
-		System.out.println("Total\t\t\t\t" + totalQuantity);
-		System.out.println("---------------------------------------------------\n\n");
+		reportString += dashLine;
+		reportString += "Total\t\t\t\t" + totalQuantity + "\n";
+		reportString += dashLine;
 		
+		File file = new File("reports/topThreeProducts.txt");
+		
+		if(!writeToTextFile(reportString, file)) {
+			log.error(file.toString() + ": Report file could not be generated");
+		}
+		
+		System.out.println(reportString);
 	}
+	
+	public boolean writeToTextFile(String report, File file) {
+		boolean result = false;
+		
+		try(PrintWriter writer = new PrintWriter(new FileWriter(file, true))){
+			writer.println(report);
+			result = true;
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		return result;
+	} 
 }
