@@ -6,9 +6,9 @@
 		<item key="DIALOG_WIDTH" value="380"/>
 		<item key="DIALOG_HEIGHT" value="443"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
-		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.ui.views.ResourceNavigator"/>
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.egit.ui.StagingView"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="General"/>
+			<item value="Git"/>
 		</list>
 	</section>
 </section>

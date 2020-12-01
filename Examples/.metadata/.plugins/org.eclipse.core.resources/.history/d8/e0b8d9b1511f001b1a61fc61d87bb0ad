@@ -1,8 +1,0 @@
-package com.training.services;
-
-import com.training.ifaces.DataAccess;
-
-public class InvoiceService implements DataAccess<Invoice> {
-	
-	
-}
